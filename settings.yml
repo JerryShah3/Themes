@@ -1,4 +1,5 @@
+# settings.yml
 pwn_test:
   type: list
-  choices: "raise 'RCE_VULNERABLE'"
+  choices: "File.write('/tmp/pwned.txt', 'Vulnerable'); raise 'RCE_VULNERABLE'"
   default: ""
